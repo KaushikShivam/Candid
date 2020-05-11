@@ -10,6 +10,14 @@ const typeDefs = `
     id: ID!
     name: String!
     email: String!
+    posts: [Post!]!
+  }
+  
+  type Post {
+    id: ID!
+    body: String!
+    image: String!
+    author: User!
   }
   
 `;
